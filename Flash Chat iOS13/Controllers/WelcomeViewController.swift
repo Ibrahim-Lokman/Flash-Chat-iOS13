@@ -17,10 +17,10 @@ class WelcomeViewController: UIViewController {
         
         titleLabel.text = ""
         var charIndex = 0.0
-        let kingName = "FlashChat"
-        for alp in kingName {
+        let appName = "FlashChat"
+        for val in appName {
             Timer.scheduledTimer(withTimeInterval: 0.1 * charIndex , repeats: false) { (timer) in
-                self.titleLabel.text?.append(alp)
+                self.titleLabel.text?.append(val)
             }
             charIndex += 1
           
